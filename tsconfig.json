@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "esModuleInterop": true, // 支持 ES6 模块和 CommonJS 模块的互操作性
+    "resolveJsonModule": true, // 允许导入 JSON 文件
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "#/*": ["./types/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "types/**/*.d.ts",
+    "SQL/**/*.ts",
+    "core/**/*.ts",
+    "core/**/*.d.ts"
+  ],
+  "exclude": ["node_modules", "dist", "**/*.js"]
+}
